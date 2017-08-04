@@ -27,7 +27,6 @@
 
 .account-masthead .account ul li a,
 .account-masthead .account ul li a span.text,
-.account-masthead .account ul li a span.username,
 .account-masthead .account ul li a span.username
  {
   color: #69737c;
@@ -38,7 +37,10 @@
 }
 
 /* Links on a:hover. */
-.account-masthead .account ul li a:hover span.text {
+.account-masthead .account ul li a:hover,
+.account-masthead .account ul li a:hover span.text,
+.account-masthead .account ul li a:hover span
+{
   color: #FCFCFC;
   background-color: inherit;
 }
@@ -87,6 +89,7 @@
 }
 
 .masthead {
+  padding: 0px;
   background: none;
   background-color: #005695; // #FCFCFC;
 }
@@ -131,10 +134,10 @@
 /* Navigation links on hover */
 .masthead .navigation ul.nav li a:hover,
 .masthead .navigation ul.nav li.active a {
-  background: none;
-  color: #69737c;
+  //background: #FCFCFC;
+  color: #FEFEFE;
   text-decoration: none;
-  box-shadow: rgb(105, 115, 124) 0px 2px 0px 0px;
+  //box-shadow: rgb(105, 115, 124) 0px 2px 0px 0px;
 
 }
 
